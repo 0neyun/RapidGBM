@@ -6,7 +6,7 @@
 
 Code paper: [Wang et al. 2023](https://arxiv.org/abs/2303.11083).
 
-The tool leverages existing APIs from the [Fermi GBM tools](https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/gbm_data_tools/gdt-docs/), and the orbital calculation is based on the [osv](https://fermi.gsfc.nasa.gov/ssc/data/analysis/user/Fermi_GBM_OrbitalBackgroundTool.pdf) from Fermi User Contributions.
+The tool makes use of publicly available [Fermi GBM tools](https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/gbm_data_tools/gdt-docs/) APIs, and the orbital calculation draw upon the [osv](https://fermi.gsfc.nasa.gov/ssc/data/analysis/user/Fermi_GBM_OrbitalBackgroundTool.pdf) from Fermi User Contributions.
 
 <br clear="left"/>
 
