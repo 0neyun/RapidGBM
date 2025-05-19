@@ -4,6 +4,8 @@
 
 RapidGBM is a lightweight interactive web application designed for rapid preview of Fermi/GBM data.
 
+Code paper: [Wang et al. 2023](https://arxiv.org/abs/2303.11083).
+
 <br clear="left"/>
 
 ---
