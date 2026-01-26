@@ -92,7 +92,7 @@ def _request_nas_impl(yyyy: str, mm: str, dd: str, skip: int = 0) -> Tuple[str, 
     """
     Access local NAS directory for Fermi GBM data (non-cached core).
     """
-    base_path = "/run/user/1000/gvfs/smb-share:server=ds925plus.local,share=homes/wangyun/gbm_daily_data/fermi/data/gbm/daily/"
+    base_path = "/mnt/nas/wangyun/gbm_daily_data/fermi/data/gbm/daily/"
     local_path = os.path.join(base_path, yyyy, mm, dd, "current")
 
     if not os.path.exists(local_path):
@@ -256,29 +256,29 @@ det_list_NaI = ['n0', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6', 'n7', 'n8', 'n9', 'na'
 det_list_BGO = ['b0','b1']
 class quick_GBM:
     def __init__(self,user_path, fit_path, result_path, 
-                 time_str,
-                 coordinates_str,
-                 pre_orbit,
-                 check_spechist_pre_orbit,
-                 det_select,
-                 tbin,
-                 lc_time_range,
-                 energy_range_NaI, 
-                 energy_range_BGO, 
-                 subtract_bg,
-                 background1,
-                 background2,
-                 snr_enabled,
-                 snr_threshold,
-                 gen_spec,
-                 spectrum_time_range, 
-                 Build_Files_botton,
-                 selected_poshist,
-                 RSP_time,
-                 all_src,
-                 model_name,
-                 params_set,
-                 poly_order, 
+                 time_str=None,
+                 coordinates_str=None,
+                 pre_orbit=None,
+                 check_spechist_pre_orbit=None,
+                 det_select=None,
+                 tbin=None,
+                 lc_time_range=None,
+                 energy_range_NaI=None, 
+                 energy_range_BGO=None,
+                 subtract_bg=None,
+                 background1=None,
+                 background2=None,
+                 snr_enabled=None,
+                 snr_threshold=None,
+                 gen_spec=None,
+                 spectrum_time_range=None, 
+                 Build_Files_botton=None,
+                 selected_poshist=None,
+                 RSP_time=None,
+                 all_src=None,
+                 model_name=None,
+                 params_set=None,
+                 poly_order=None, 
                  ):
         #set path
         self.user_path = user_path
